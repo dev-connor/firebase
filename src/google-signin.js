@@ -1,9 +1,4 @@
-function googleSignInPopup() {
-	
-	// [START auth_google_provider_create]
-  var provider = new firebase.auth.GoogleAuthProvider();
-  // [END auth_google_provider_create]
-	
+function googleSignInPopup(provider) {
   // [START auth_google_signin_popup]
   firebase.auth().signInWithPopup(provider).then((result) => {
       /** @type {firebase.auth.OAuthCredential} */
