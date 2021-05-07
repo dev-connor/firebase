@@ -6,12 +6,14 @@
       // https://firebase.google.com/docs/reference/js/firebase.User
       var uid = user.uid;
       // ...
-      console.warn('로그인을 환영합니다!!');
+    console.warn('로그인을 환영합니다!!');
 		console.log(user);
+    $(".name").text(user.displayName + '님 환영합니다!!');
     } else {
       // User is signed out
       // ...
       console.warn('로그아웃이 성공적으로 되었습니다!!');
+      $(".name").text('게스트');
     }
   });
   // [END auth_state_listener]

@@ -24,11 +24,11 @@
     <div id="message">
       <h2>Welcome</h2>
       <h1>Firebase Hosting Setup Complete</h1>
+      <span class="name">게스트</span>
       <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
       <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
       
       <button onclick="googleSignInPopup()">Google Login</button>
-      <button onclick="authStateListener()">Login Check</button>
       <button onclick="signOut()">Sign Out</button>
 
     </div>
@@ -79,6 +79,7 @@
   <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
   <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-analytics.js"></script>
   <!-- Add Firebase products that you want to use -->
+    <!-- 로그인 선언 -->
   <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-firestore.js"></script>
   
@@ -101,6 +102,8 @@
  </script>
  <script src="google-signin.js"></script>
  <script src="index.js"></script>
+ <!-- jQuery 선언 -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
   </body>
 </html>
