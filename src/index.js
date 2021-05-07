@@ -1,4 +1,4 @@
-function authStateListener() {
+// function authStateListener() {
   // [START auth_state_listener]
   firebase.auth().onAuthStateChanged((user) => {
     if (user) {
@@ -15,4 +15,13 @@ function authStateListener() {
     }
   });
   // [END auth_state_listener]
+// }
+function signOut() {
+  // [START auth_sign_out]
+  firebase.auth().signOut().then(() => {
+    // Sign-out successful.
+  }).catch((error) => {
+    // An error happened.
+  });
+  // [END auth_sign_out]
 }
