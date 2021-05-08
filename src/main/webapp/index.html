@@ -29,6 +29,7 @@
       <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
       <button class="login" onclick="googleSignInPopup()">Google Login</button>
       <button onclick="signOut()">Sign Out</button>
+      <button onclick="addRecord()">Add Record</button>
 
     </div>
     <p id="load">Firebase SDK Loading&hellip;</p>
@@ -80,6 +81,7 @@
   <!-- Add Firebase products that you want to use -->
     <!-- 로그인 선언 -->
   <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-auth.js"></script>
+  <!-- 데이터베이스 선언 -->
   <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-firestore.js"></script>
   
  <script>
@@ -101,6 +103,7 @@
  </script>
  <script src="google-signin.js"></script>
  <script src="index.js"></script>
+ <script src="database.js"></script>
  <!-- jQuery 선언 -->
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
